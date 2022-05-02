@@ -1,0 +1,16 @@
+/*
+ * Copyright (c) 2022 XiNGRZ
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+/ {
+	aliases {
+		lcd-backlight = &aw9364;
+	};
+
+	aw9364: aw9364 {
+		compatible = "awinic,aw9364";
+		output-gpios = <&gpio0 19 GPIO_PULL_UP>;
+	};
+};

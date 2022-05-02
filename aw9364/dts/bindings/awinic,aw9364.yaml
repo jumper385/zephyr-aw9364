@@ -1,0 +1,18 @@
+# Copyright (c) 2022 XiNGRZ
+# SPDX-License-Identifier: Apache-2.0
+
+description: Awinic AW9364 LED driver
+
+compatible: "awinic,aw9364"
+
+include: base.yaml
+
+properties:
+  output-gpios:
+    type: phandle-array
+    required: true
+
+  steps:
+    type: int
+    required: false
+    description: Number of steps supported by the LED driver (default 16)
