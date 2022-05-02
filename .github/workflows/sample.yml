@@ -1,0 +1,21 @@
+name: sample
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up Zephyr v3.0.0
+        uses: xingrz/setup-zephyr@master
+        with:
+          manifest-rev: v3.0.0
+
+      - name: Set up Espressif tools
+        uses: xingrz/setup-zephyr-espressif@master
+
+      - name: Build
+        run: west build -b esp32 sample

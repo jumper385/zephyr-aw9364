@@ -1,4 +1,4 @@
-AW9364
+AW9364 [![sample](https://github.com/xingrz/zephyr-aw9364/actions/workflows/sample.yml/badge.svg)](https://github.com/xingrz/zephyr-aw9364/actions/workflows/sample.yml)
 ==========
 
 Awinic AW9364 LED driver for Zephyr.
