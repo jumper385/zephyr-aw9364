@@ -1,0 +1,4 @@
+manifest:
+  self:
+    # This repository should be cloned to
+    path: zephyr-aw9364
